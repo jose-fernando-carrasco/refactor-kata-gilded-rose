@@ -2,5 +2,7 @@ package edu.alenasoft;
 
 public interface QualityStrategy {
 
-    void updateStrategy(Item item);
+    void updateSellInStrategy(Item item);
+
+    void updateQualityStrategy(Item item);
 }
