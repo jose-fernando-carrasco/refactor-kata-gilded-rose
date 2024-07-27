@@ -21,6 +21,6 @@ public class ConjuredStrategy implements QualityStrategy {
 
     @Override
     public void updateSellInStrategy(Item item) {
-        item.setSellIn((item.getSellIn() - 1));
+        item.setSellIn((item.getSellIn() - singleQualityFactor));
     }
 }
