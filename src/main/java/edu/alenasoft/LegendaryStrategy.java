@@ -3,14 +3,10 @@ package edu.alenasoft;
 public class LegendaryStrategy implements QualityStrategy {
 
     @Override
-    public void updateQualityStrategy(Item item) {
-        // nada
-    }
+    public void updateQualityStrategy(Item item) { }
 
     @Override
     public void updateSellInStrategy(Item item) {
-        if (item.getSellIn() > 0) {
-            item.setSellIn(item.getSellIn() - 1);
-        }
+        item.setSellIn(item.getSellIn() - 1);
     }
 }

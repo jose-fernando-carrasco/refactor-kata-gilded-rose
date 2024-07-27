@@ -1,6 +1,6 @@
 package edu.alenasoft;
 
-public class Item implements ItemQuality{
+public class Item{
 
   public String name;
   public int sellIn;
@@ -39,10 +39,5 @@ public class Item implements ItemQuality{
         ", sellIn=" + sellIn +
         ", quality=" + quality +
         '}';
-  }
-
-  @Override
-  public void updateQuality(int factor) {
-    this.setQuality(this.getQuality() + factor);
   }
 }
