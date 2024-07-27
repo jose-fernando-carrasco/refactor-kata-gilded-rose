@@ -10,7 +10,7 @@ public class ConjuredStrategy implements QualityStrategy {
             }
         }
 
-        if (item.getSellIn() < 0 && item.getQuality() > 0) {
+        if (item.getSellIn() <= 0 && item.getQuality() > 0) {
             item.setQuality(item.getQuality() - 2);
             if (item.getQuality() < 0) {
                 item.setQuality(0);

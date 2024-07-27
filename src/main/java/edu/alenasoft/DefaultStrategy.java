@@ -7,7 +7,7 @@ public class DefaultStrategy implements QualityStrategy {
             item.setQuality(item.getQuality() - 1);
         }
 
-        if (item.getSellIn() < 0 && item.getQuality() > 0) {
+        if (item.getSellIn() <= 0 && item.getQuality() > 0) {
             item.setQuality(item.getQuality() - 1);
         }
     }
